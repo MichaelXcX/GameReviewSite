@@ -21,9 +21,9 @@ async function getHello() {
 
 export default async function Categories() {
 
-    const data = await getHello();
+    // const data = await getHello();
 
-    console.log(data);
+    // console.log(data);
     return (
         <>
             <Navbar />
@@ -32,7 +32,7 @@ export default async function Categories() {
                 <Category
                     imageSrc='./static/images/rts_example.png'
                     title="RTS"
-                    description={data.message}
+                    description="{data.message}"
                 />
             </div>
             <Divider_grey />
