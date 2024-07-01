@@ -5,12 +5,17 @@ import Button from "../../../components/Button"
 import './categories-page.css'
 
 async function getHello() {
-    const data = await fetch("http://localhost:3000/api/getgames");
-    if (!data.ok) {
-        console.log("nu s-a conectat")
-    }
+    try {
+        const data = await fetch("http://localhost:3000/api/getgames");
+        if (!data.ok) {
+            console.log("nu s-a conectat")
+        }
 
-    return data.json();
+        return data.json();
+    }
+    catch (e) {
+        console.log(e);
+    }
 }
 
 
