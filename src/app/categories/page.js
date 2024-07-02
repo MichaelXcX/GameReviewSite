@@ -21,9 +21,9 @@ async function getHello() {
 
 export default async function Categories() {
 
-    // const data = await getHello();
+    const data = await getHello();
 
-    // console.log(data);
+    console.log(data);
     return (
         <>
             <Navbar />
